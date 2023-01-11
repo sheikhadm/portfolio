@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    height: 100vh;
+    
+}
+.dashboard{
+    height: 100vh;
+    width: 20%;
+    background-color: rgb(0, 153, 255);
+    padding-top: 0;
+    padding-left: 1.3em;
+    padding-right: 1.3em;
+    padding-bottom: 0;
+}
+.image{
+    height: 300px;
+    width: 100%;
+    background-color: azure;
+    border-radius: 50%;
+    border: 5px solid rgb(0, 68, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 1em;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 50%;
+}
+ul{
+    list-style: none;
+    padding: .3em;
+}
+li{
+    background-color: aliceblue;
+    padding: .5em;
+    margin: 1em;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 1s ease-out;
+    border-radius: 50px;
+}
+li:hover{
+    background-color: rgb(17, 0, 255);
+    color: white;
+    cursor: pointer;
+}
+section{
+    width: 80%;
+    height: 100vh;
+    display: none;
+}
+.home{
+  
+    
+}
+.about{
+    margin: 7em auto;
+    height: 60%;
+    width: 70%;
+    border: 1px solid black;
+}
+.show1{
+    animation-name:show;
+    animation-duration:  1s ;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-color: rgb(6, 189, 245);
+    display: block;
+}
+.show2{
+    animation-name:left;
+    animation-duration:  1s ;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-color: dimgrey;
+    display: block;
+
+}
+.show3{
+    animation-name:right;
+    animation-duration:  1s ;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-color: cadetblue;
+    display: block;
+
+}
+.projects{
+    
+}
+.contact{
+}
+@keyframes left {
+    0%{transform: translateY(100%)}
+    100%{transform: translateY(0%)}
+}
+@keyframes right {
+    0%{transform: rotateY(90deg);}
+    100%{transform: rotateY(0deg);}
+}
+@keyframes show{
+    0%{transform: skewY(180deg);}
+    100%{transform: skewY(0deg);}
+}
